@@ -54,7 +54,7 @@ const Card = ({ item }) => {
     >
       <div
         className={`flex flex-col ${
-          isTopCenter ? "" : "items-center"
+          isTopCenter ? "items-center" : "items-center"
         } transition-all duration-200`}
         ref={contentRef}
       >
