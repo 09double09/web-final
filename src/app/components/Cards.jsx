@@ -105,7 +105,7 @@ const Card = ({ item }) => {
 
         <div
           className="flex items-center gap-3 w-full transition-all duration-200"
-          style={{ padding: "16px 0px" }}
+          style={{ paddingTop: "16px" }}
         >
           <StartButton
             isHover={isHover}
