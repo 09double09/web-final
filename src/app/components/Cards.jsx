@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const Cards = () => {
   return (
-    <div className="w-full h-full flex overflow-x-scroll items-center gap-4">
+    <div className="w-full h-full flex overflow-x-scroll items-center gap-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
       {cardsInfo.map((item) => {
         return <Card key={item.id} item={item}></Card>;
       })}
