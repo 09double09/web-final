@@ -37,7 +37,7 @@ const Card = ({ item }) => {
   useEffect(() => {
     if (!isHover) {
       const timeout = setTimeout(() => {
-        setIsTopCenter(true);
+        // setIsTopCenter(true);
         return clearTimeout(timeout);
       }, 200);
     }
@@ -45,7 +45,7 @@ const Card = ({ item }) => {
   return (
     <div
       className={`${
-        isHover ? "w-[560px]" : "w-77"
+        isHover ? "w-[560px]" : "w-80"
       } relative bg-white rounded-[20px] outline outline-[3px] outline-offset-[-1.50px] outline-stone-200 transition-all duration-200 `}
       style={{
         padding: "16px",
@@ -116,14 +116,14 @@ const Card = ({ item }) => {
 
           {!isHover && (
             <div
-              className={`w-10 h-10 bg-[#F7CB82] rounded-full flex items-center justify-center`}
+              className={`w-16.5 h-13 bg-[#F7CB82] rounded-full flex items-center justify-center relative`}
               onMouseEnter={() => {
                 setIsHover(true);
                 setIsTopCenter(false);
               }}
               // onMouseLeave={() => {setIsHover(false)}}
             >
-              <Image src={rightArrow} alt="rightArrow" />
+              <Image src={rightArrow} className="absolute" alt="rightArrow" />
             </div>
           )}
         </div>
@@ -137,7 +137,7 @@ const StartButton = ({ isHover, setIsHover, url, setIsTopCenter }) => {
     <div className="w-full ">
       <div
         className={`${
-          isHover ? "w-full" : "w-60"
+          isHover ? "w-full" : "w-56"
         } h-14 py-2  bg-[#D68E66] rounded-[20px] outline outline-[3px] outline-offset-[-3px] outline-[#C48967] inline-flex justify-center items-center gap-2.5 overflow-hidden transition-all duration-200 cursor-pointer
       select-none`}
         onMouseLeave={() => {
