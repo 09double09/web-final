@@ -81,22 +81,25 @@ const Card = ({ item }) => {
             }}
           >
             <div className=" w-52 h-16 relative flex flex-col bg-white rounded-[20px] outline outline-[3px] outline-offset-[-3px] outline-stone-200 overflow-hidden">
-              <div className="left-[38px] top-[20px] absolute inline-flex justify-start items-center gap-[5.08px]">
-                <div className="flex gap-1.25 items-center justify-center">
-                  {starList.map((star, index) => {
-                    return (
-                      <Image
-                        src={star ? fullStar : emptyStar}
-                        key={index}
-                        alt="star"
-                      />
-                    );
-                  })}
-                </div>
+              <div className="flex gap-1.25 h-full items-center justify-center">
+                {starList.map((star, index) => {
+                  return (
+                    <Image
+                      src={star ? fullStar : emptyStar}
+                      key={index}
+                      alt="star"
+                    />
+                  );
+                })}
               </div>
             </div>
-            <div className=" w-52 h-full relative bg-white rounded-[20px] outline outline-[3px] outline-offset-[-3px] outline-stone-200 overflow-hidden">
-              <div className="w-44 left-[18px] top-[29px] absolute justify-start text-neutral-500 text-base font-semibold font-['Inter'] tracking-widest">
+            <div className=" w-full h-full relative bg-white rounded-[20px] outline outline-[3px] outline-offset-[-3px] outline-stone-200 overflow-hidden">
+              <div
+                className="w-full  h-full absolute justify-center text-neutral-500 text-base font-semibold font-['Inter'] tracking-widest"
+                style={{
+                  padding: "16px",
+                }}
+              >
                 遊戲簡介哈哈哈啊哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈
               </div>
             </div>
