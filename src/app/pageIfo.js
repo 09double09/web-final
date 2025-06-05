@@ -7,6 +7,7 @@ import pen from "@/app/imgs/games/pen.png";
 import claw from "@/app/imgs/games/claw.png";
 import tomato from "@/app/imgs/games/tomato.png";
 import joker from "@/app/imgs/games/joker.png";
+import bomb from "@/app/imgs/games/bomb.png";
 
 const games = [
   {
@@ -79,6 +80,14 @@ const games = [
     description: "童年大亂鬥",
     image: bacteria,
     url: "https://childhood-battle.vercel.app/",
+    stars: 5,
+  },
+  {
+    id: 10,
+    name: "炸彈來囉",
+    description: "炸彈來囉",
+    image: bomb,
+    url: "https://heresthebomb.zeabur.app",
     stars: 5,
   },
 ];
