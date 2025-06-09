@@ -49,7 +49,7 @@ const Card = ({ item }) => {
       } relative  bg-white rounded-[20px] outline outline-[3px] outline-offset-[-1.50px] outline-stone-200 transition-all duration-200 `}
       style={{
         padding: "16px",
-        marginLeft: "200px",
+        marginLeft: "18px",
       }}
     >
       <div
@@ -101,7 +101,12 @@ const Card = ({ item }) => {
                   padding: "16px",
                 }}
               >
-                遊戲簡介哈哈哈啊哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈
+                {item.description.split("\n").map((line, index) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    {index < item.description.split("\n").length - 1 && <br />}
+                  </React.Fragment>
+                ))}
               </div>
             </div>
           </div>
