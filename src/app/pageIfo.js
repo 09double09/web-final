@@ -13,9 +13,12 @@ const games = [
   {
     id: 1,
     name: "標靶射擊遊戲",
+    //遊戲介紹
     description: "射擊遊戲",
     image: arrow,
+    //卡牌星星數
     stars: 3,
+    //遊戲連結
     url: "https://web-final-project-woad.vercel.app/",
   },
   {
