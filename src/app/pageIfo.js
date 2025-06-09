@@ -96,7 +96,7 @@ const games = [
   },
   {
     id: 10,
-    name: "炸彈來囉",
+    name: "砲塔守衛戰",
     description:
       "操控砲台，擊落在天上投放炸彈的鳥，順便閃躲炸彈及自己失誤的子彈！",
     image: bomb,

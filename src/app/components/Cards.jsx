@@ -46,25 +46,26 @@ const Card = ({ item }) => {
     <div
       className={`${
         isHover ? "w-[560px]" : "2xl:w-90 w-62"
-      } relative  bg-white rounded-[20px] outline outline-[3px] outline-offset-[-1.50px] outline-stone-200 transition-all duration-200 `}
+      }  relative min-h-[425px] bg-white rounded-[20px] outline outline-[3px] outline-offset-[-1.50px] outline-stone-200 transition-all duration-200 `}
       style={{
         padding: "16px",
         marginLeft: "18px",
       }}
     >
       <div
-        className={`flex flex-col ${
+        className={`flex flex-col  ${
           isTopCenter ? "items-center" : "items-center"
         } transition-all duration-200`}
         ref={contentRef}
       >
-        <div className="flex  transition-all duration-200">
+        <div className="flex  mt-auto transition-all duration-200">
           {/* 圖片 */}
           <div className="flex flex-col items-center relative transition-all duration-200">
             <Image
               src={item.image}
               alt={item.name}
-              className="rounded-[20px] border-[3px] max-w-50 2xl:max-w-72 border-stone-200"
+              
+              className="rounded-[20px] border-[3px] max-w-54 2xl:max-w-72 border-stone-200 "
             />
             <div className="absolute text-center bottom-4 justify-start text-neutral-500 text-2xl 2xl:text-3xl font-semibold font-['Inter'] tracking-[3.08px]">
               {item.name}
