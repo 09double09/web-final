@@ -96,7 +96,7 @@ const Card = ({ item }) => {
             </div>
             <div className=" w-full h-full relative bg-white rounded-[20px] outline outline-[3px] outline-offset-[-3px] outline-stone-200 ">
               <div
-                className="w-full  h-full absolute justify-center text-neutral-500 text-base font-semibold font-['Inter'] tracking-widest"
+                className="w-full  h-full absolute justify-center text-neutral-500 text-base font-semibold text-[14px] 2xl:text-base font-['Inter'] tracking-widest"
                 style={{
                   padding: "16px",
                 }}
